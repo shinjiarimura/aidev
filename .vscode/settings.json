@@ -1,0 +1,19 @@
+{
+  // デフォルトのシェルを zsh に固定
+  "terminal.integrated.defaultProfile.osx": "zsh",
+
+  // zsh プロファイルを最小構成で明示（余計な args は -l のみ）
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    }
+  },
+
+  // 念のため、shellArgs に何も仕込まない
+  "terminal.integrated.shellArgs.osx": ["-l"],
+
+  // Python 拡張に .venv を優先させる（任意）
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.activateEnvironment": true
+}
